@@ -1,10 +1,17 @@
+
 .App {
+  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+  min-height: 100vh;
   text-align: center;
+  color: #2c3e50;
 }
 
+
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  height: 60px;
+  margin-right: 16px;
+  vertical-align: middle;
+  float: left;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -13,19 +20,96 @@
   }
 }
 
+
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background: linear-gradient(90deg, #007bff 0%, #00c6ff 100%);
+  min-height: 120px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: flex-start;
+  font-size: calc(12px + 2vmin);
+  color: #fff;
+  padding-left: 32px;
 }
 
+
 .App-link {
-  color: #61dafb;
+  color: #ff9800;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Bootstrap table custom colors */
+.table thead.table-dark {
+  background-color: #007bff;
+  color: #fff;
+}
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #f2f6fc;
+}
+.table-hover tbody tr:hover {
+  background-color: #e3f2fd;
+}
+
+/* Bootstrap button custom colors */
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+.btn-success {
+  background-color: #43cea2;
+  border-color: #43cea2;
+}
+.btn-info {
+  background-color: #00c6ff;
+  border-color: #00c6ff;
+}
+.btn-warning {
+  background-color: #ff9800;
+  border-color: #ff9800;
+}
+.btn-secondary {
+  background-color: #2c3e50;
+  border-color: #2c3e50;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5 {
+  color: #007bff;
+  font-weight: 700;
+}
+
+/* Navigation */
+.navbar {
+  background: linear-gradient(90deg, #007bff 0%, #00c6ff 100%) !important;
+}
+.navbar-brand {
+  color: #fff !important;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.nav-link {
+  color: #fff !important;
+  font-size: 1.1rem;
+}
+.nav-link.active, .nav-link:hover {
+  color: #ff9800 !important;
+}
+
+/* Card styling */
+.card {
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+  border-radius: 12px;
+}
+.card-title {
+  color: #007bff;
+}
+
+/* Modal styling */
+.modal-content {
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0, 123, 255, 0.15);
 }
 
 @keyframes App-logo-spin {
